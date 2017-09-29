@@ -3,6 +3,11 @@
 - 模板用的是thymeleaf
 - 缓存用的是redis
 - spring-boot
+- ORM用的是mybatis
+- 登陆用的是spring-session
+- 安全用的是spring-
+- 代理是nginx
+
 
 # TODO
 
