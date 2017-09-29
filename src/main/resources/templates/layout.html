@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<script type="text/javascript" src="/gentelella/js/jquery.min.js" charset="UTF-8"></script>
+<link href="/gentelella/css/bootstrap.min.css" rel="stylesheet">
+<link href="/gentelella/css/animate.min.css" rel="stylesheet">
+<link href="/gentelella/less/custom.css" rel="stylesheet">
+<link href="/gentelella/fonts/css/font-awesome.css" rel="stylesheet">
+<script type="text/javascript" src="/gentelella/js/custom.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/gentelella/js/nicescroll/jquery.nicescroll.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/gentelella/js/bootstrap.min.js"></script>
+
+<body  class="nav-md" >
+
+<div class="container body">
+    <div class="main_container">
+
+        <div th:include="components/left" class="col-md-3 left_col"></div>
+        <div th:include="components/head" class="top_nav"></div>
+        <!-- 这里是内容 -->
+        <div class="right_col" role="main" style="min-height: 1000px;">
+            <div layout:fragment="content"> </div>
+        </div>
+        <footer>
+            <div class="pull-right">
+                Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+
+
+
+
+    </div>
+
+</div>
+</div>
+</body>
+</html>
