@@ -10,4 +10,11 @@ public class IndexController {
     public String index(){
         return "dashboard/index";
     }
+
+    @RequestMapping("/adduser")
+    public String addUser(){
+        return "dashboard/adduser";
+    }
+
+
 }
